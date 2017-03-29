@@ -2,22 +2,35 @@
 <html>
   <head>
     <title>The AJAXson 5</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container-fluid">
     <h1>The AJAXson 5</h1>
-
-    <form id="form" class="container"/>
+    <div class="form-group">
+      <div class="well col-xs-12">
+      <form id="form">
         <label>What kind of Jackson 5 related gif do you want?</label>
         <input id="tag" type="text"/>
+         </div>
+        <div class="well col-xs-12">
           <p>Prove you are not a robot by filling in this sentence</p>
-        <input id ="captcha" type="text"/>
-        <label> Jacksons are better than 1.</label>
-        <input type="submit" id ="submit"value="Get my Gif!" />
-    </form>
+          <input id ="captcha" type="text" class="form-control" required />
+          <label> Jacksons are better than 1.</label>
+          <button id ="submit" class="btn btn-primary">Get my Gif!</button>
+          <div id="error" hidden="true">
+          <div class="col-xs-12 col-lg-6 alert alert-danger glyphicon glyphicon-remove" >
+          <span class="sr-only">Error:</span>
+          No gifs for you.
+        </div>
+         </div>
+        </div>
+      </form>
     <p id="feedback" hidden="true"></p>
-    <img id="gif" src="" hidden="true"/>
-
+    <img id="gif" class="jumbotron col-xs-12 col-md-6" src="" hidden="true"/>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
 </body>
