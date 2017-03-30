@@ -58,8 +58,7 @@ function fetchAndDisplayGif(event) {
           },
           complete: function(){
             console.log("ajax complete");
-            //  setGifLoadedStatus(true);
-      //    $('#feedback').text("loading...");
+            setGifLoadedStatus(true);
           },
           error: function() {
             console.log("ajax error");
@@ -70,6 +69,7 @@ function fetchAndDisplayGif(event) {
           }
        });
    } else{
+
      $("div#error").attr("hidden",false);
       setGifLoadedStatus(false);
      }

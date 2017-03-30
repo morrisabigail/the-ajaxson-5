@@ -4,11 +4,20 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@media only screen and (min-width: 768px) {
-  .container-fluid{ padding:0 20%;}
+@media only screen and (min-width: 500px) {
+    .container{
+        width: 60%;
+    }
 }
-@media only screen and (max-width: 768px){
-  .container-fluid{padding:0 10%;}
+#input-one{
+
+}
+body{
+  margin:0 auto;
+}
+
+.btn{
+  margin:1em;
 }
 html {
   font-family: sans-serif;
@@ -1086,6 +1095,7 @@ th {
   content: "\e260";
 }
 * {
+  margin:auto;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -1609,17 +1619,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 60%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 60%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 60%;
   }
 }
 .container-fluid {
@@ -5043,9 +5053,12 @@ a.thumbnail.active {
   padding: 9px;
   color: #333;
 }
+.has-error{
+  border: solid red;
+}
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }

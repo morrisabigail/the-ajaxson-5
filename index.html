@@ -6,24 +6,29 @@
      <link href="css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
     <h1>The AJAXson 5</h1>
-    <div class="form-group">
+    <form id="form">
       <div class="well col-xs-12">
-      <form id="form">
-        <label>What kind of Jackson 5 related gif do you want?</label>
-        <input id="tag" type="text"/>
-         </div>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0" id="input-one">
+          <p>What kind of Jackson 5 related gif do you want?</p>
+          <input id="tag" class="form-control" type="text"/>
+      </div>
+       </div>
         <div class="well col-xs-12">
           <p>Prove you are not a robot by filling in this sentence</p>
-          <input id ="captcha" type="text" class="form-control" required />
-          <label> Jacksons are better than 1.</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <input id ="captcha" type="text" class="form-control"required/>
+
+            <div class="input-group-addon">Jacksons are better than 1.
+            </div>
+          </div>
           <button id ="submit" class="btn btn-primary">Get my Gif!</button>
           <div id="error" hidden="true">
-          <div class="col-xs-12 col-lg-6 alert alert-danger glyphicon glyphicon-remove" >
-          <span class="sr-only">Error:</span>
-          No gifs for you.
-        </div>
+            <div class="col-xs-12 col-lg-6 alert alert-danger glyphicon glyphicon-remove" >
+              <span class="sr-only">Error:</span>
+              No gifs for you.
+            </div>
          </div>
         </div>
       </form>
